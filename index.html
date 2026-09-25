@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Santuário em Símbolos</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#061322;color:#fff;font-family:Arial,sans-serif}
+.app{max-width:430px;margin:auto;background:#071321;min-height:100vh;padding-bottom:80px}
+.top{text-align:center;padding:20px;color:#dfb85b;font-size:28px;font-weight:800}
+.hero{margin:15px;border-radius:25px;overflow:hidden;position:relative}
+.hero img{width:100%;height:430px;object-fit:cover}
+.overlay{position:absolute;inset:0;background:linear-gradient(transparent,#061322);padding:25px;display:flex;flex-direction:column;justify-content:end}
+h1,h2{color:#dfb85b}
+.card{margin:15px;padding:18px;background:#101f35;border:1px solid #dfb85b55;border-radius:22px}
+button{background:#dfb85b;border:0;border-radius:30px;padding:15px;width:100%;font-weight:bold}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.item{background:#182b44;border-radius:16px;overflow:hidden;cursor:pointer}
+.item img{width:100%;height:100px;object-fit:cover}
+.item p{padding:10px}
+.study{display:none}
+.study.active{display:block}
+.nav{position:fixed;bottom:0;width:100%;max-width:430px;background:#050b14;padding:15px;text-align:center;color:#dfb85b}
+</style>
+</head>
+<body>
+<div class="app">
+
+<div class="top">🏛️<br>SANTUÁRIO<br>EM SÍMBOLOS</div>
+
+<div id="home">
+<div class="hero">
+<img src="assets/home.png">
+<div class="overlay">
+<h1>Entenda o plano da redenção</h1>
+<p>Uma jornada visual onde cada detalhe do Santuário aponta para Cristo.</p>
+<button onclick="mostrar('altar')">Começar estudo</button>
+</div>
+</div>
+
+<div class="card">
+<h2>Módulos</h2>
+<div class="grid">
+<div class="item" onclick="mostrar('altar')"><img src="assets/altar.png"><p>🔥 Altar de Sacrifícios</p></div>
+<div class="item"><img src="assets/modulos.png"><p>🕯️ Lugar Santo</p></div>
+<div class="item" onclick="mostrar('sacerdocio')"><img src="assets/sacerdocio.png"><p>👑 Sacerdócio</p></div>
+<div class="item"><img src="assets/modulos.png"><p>📜 Santíssimo</p></div>
+</div>
+</div>
+</div>
+
+<div id="altar" class="study">
+<div class="card">
+<img src="assets/altar.png" style="width:100%;border-radius:20px">
+<h2>Altar de Sacrifícios</h2>
+<p>O primeiro elemento do pátio revela a necessidade de um sacrifício e aponta para Cristo.</p>
+<p><b>Hebreus capítulo nove, versículo vinte e dois.</b></p>
+<h2>O que representa?</h2>
+<p>🐑 Substituição<br>🩸 Sangue<br>🙏 Perdão<br>✝️ Redenção</p>
+<button onclick="ouvir('O altar de sacrifícios apontava para Cristo. Hebreus capítulo nove, versículo vinte e dois.')">🔊 Ouvir estudo</button>
+<button onclick="voltar()">← Voltar</button>
+</div>
+</div>
+
+<div id="sacerdocio" class="study">
+<div class="card">
+<img src="assets/sacerdocio.png" style="width:100%;border-radius:20px">
+<h2>Sacerdócio</h2>
+<p>Um ministério que aponta para Cristo e sua intercessão.</p>
+<button onclick="ouvir('O sacerdócio revela o ministério de Cristo como nosso intercessor.')">🔊 Ouvir estudo</button>
+<button onclick="voltar()">← Voltar</button>
+</div>
+</div>
+
+<div class="nav">🏠 Início　📖 Estudos　⭐ Favoritos</div>
+</div>
+
+<script>
+function mostrar(id){
+document.getElementById('home').style.display='none';
+document.querySelectorAll('.study').forEach(x=>x.classList.remove('active'));
+document.getElementById(id).classList.add('active');
+}
+function voltar(){
+document.querySelectorAll('.study').forEach(x=>x.classList.remove('active'));
+document.getElementById('home').style.display='block';
+}
+function ouvir(t){
+speechSynthesis.cancel();
+let u=new SpeechSynthesisUtterance(t);
+u.lang='pt-BR';
+u.rate=.85;
+speechSynthesis.speak(u);
+}
+</script>
+
+</div>
+</body>
+</html>
