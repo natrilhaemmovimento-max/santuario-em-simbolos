@@ -1,0 +1,1 @@
+body{margin:0;background:#06111f;color:#f5efe5;font-family:Arial;padding:20px}.app{max-width:900px;margin:auto}h1,h2{color:#e8bd59}.menu{display:grid;grid-template-columns:1fr 1fr;gap:12px}.menu div,section{background:#10243a;border:1px solid #76572a;border-radius:22px;padding:20px;margin:12px 0;text-align:center}

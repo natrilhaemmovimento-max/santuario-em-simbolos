@@ -1,0 +1,8 @@
+{
+  "name": "Santu\u00e1rio em S\u00edmbolos",
+  "short_name": "Santu\u00e1rio",
+  "start_url": "./",
+  "display": "standalone",
+  "theme_color": "#06111f",
+  "background_color": "#06111f"
+}
