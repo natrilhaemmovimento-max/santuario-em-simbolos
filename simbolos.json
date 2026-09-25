@@ -1,0 +1,16 @@
+[
+  {
+    "id": "altar-bronze",
+    "titulo": "Altar de Bronze",
+    "categoria": "Santuário Terrestre",
+    "referencia": "Êxodo 27:1-8; João 1:29",
+    "resumo": "O altar onde os sacrifícios apontavam para Cristo."
+  },
+  {
+    "id": "arca-alianca",
+    "titulo": "Arca da Aliança",
+    "categoria": "Lugar Santíssimo",
+    "referencia": "Êxodo 25:10-22",
+    "resumo": "A presença de Deus, sua lei e sua aliança."
+  }
+]
