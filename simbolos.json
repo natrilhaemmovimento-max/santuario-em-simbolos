@@ -1,17 +1,23 @@
 [
   {
     "id": "altar-bronze",
-    "imagem": "assets/simbolos/altar-bronze.png",
-    "titulo": "Altar de Bronze"
+    "titulo": "Altar de Bronze",
+    "categoria": "Santuário Terrestre",
+    "referencia": "Êxodo 27:1-8; João 1:29",
+    "resumo": "O altar dos sacrifícios que apontava para Cristo."
   },
   {
     "id": "arca-alianca",
-    "imagem": "assets/simbolos/arca-alianca.png",
-    "titulo": "Arca da Aliança"
+    "titulo": "Arca da Aliança",
+    "categoria": "Lugar Santíssimo",
+    "referencia": "Êxodo 25:10-22",
+    "resumo": "A presença de Deus, sua lei e sua aliança."
   },
   {
     "id": "sumo-sacerdote",
-    "imagem": "assets/simbolos/sumo-sacerdote.png",
-    "titulo": "Sumo Sacerdote"
+    "titulo": "Sumo Sacerdote",
+    "categoria": "Sacerdócio",
+    "referencia": "Hebreus 4:14-16",
+    "resumo": "O ministério mediador de Cristo."
   }
 ]
