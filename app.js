@@ -1,1 +1,0 @@
-fetch('simbolos.json').then(r=>r.json()).then(data=>{document.getElementById('cards').innerHTML=data.map(s=>`<section class="card"><h2>${s.titulo}</h2><b>${s.categoria}</b><p>${s.referencia}</p><p>${s.resumo}</p></section>`).join('')})
